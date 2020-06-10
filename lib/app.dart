@@ -6,7 +6,9 @@ import 'package:custom_navigator/custom_scaffold.dart';
 
 
 
-
+/////////////////////////////////////////////////////////////////////////////
+/// NORMAL NAVIGATOR SOLUTION
+////////////////////////////////////////////////////////////////////////////
 class NormalBottomNavBar extends StatefulWidget {
   NormalBottomNavBar({Key key}) : super(key: key);
 
@@ -57,6 +59,9 @@ class NormalBottomNavBarState extends State<NormalBottomNavBar> {
   }
 }
 
+/////////////////////////////////////////////////////////////////////////////
+/// DIY NAVIGATOR SOLUTION
+////////////////////////////////////////////////////////////////////////////
 class App extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => AppState();
@@ -83,41 +88,6 @@ class AppState extends State<App> {
       });
     }
   }
-  
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -181,6 +151,10 @@ class AppState extends State<App> {
   }
 }
 
+
+/////////////////////////////////////////////////////////////////////////////
+/// CUPERTINO SOLUTION
+////////////////////////////////////////////////////////////////////////////
 class CupertinoStoreHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -233,6 +207,9 @@ class CupertinoStoreHomePage extends StatelessWidget {
 }
 
 
+/////////////////////////////////////////////////////////////////////////////
+/// CUSTOM NAVIGATOR OR CUSTOM SCAFFOLD
+////////////////////////////////////////////////////////////////////////////
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
